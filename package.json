@@ -7,8 +7,10 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test": "node -r dotenv/config --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test": "NODE_ENV=test node -r dotenv/config --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:ci": "npm test -- --ci",
+    "test:watch": "npm test -- --watchAll",
+    "test:coverage": "npm test -- --coverage",
     "start": "NODE_ENV=dev node -r dotenv/config .",
     "prepare-commit-msg-unix": "exec < /dev/tty && git cz --hook || true",
     "prepare-commit-msg-win": "scripts/prepare-commit-msg",

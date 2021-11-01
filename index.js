@@ -1,3 +1,3 @@
-import { Logger } from './src/logger.js';
+import { startServer } from './src/server.js';
 
-Logger.info('simple-tcp-server');
+startServer();
