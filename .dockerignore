@@ -3,6 +3,7 @@ scripts
 coverage
 node_modules
 npm-debug.log
+CHANGELOG.md
 .husky
 .eslintrc
 .git

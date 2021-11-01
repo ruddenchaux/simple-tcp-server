@@ -46,7 +46,6 @@ jobs:
         run: npm run test:ci
 
   release:
-    needs: [deploy]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
