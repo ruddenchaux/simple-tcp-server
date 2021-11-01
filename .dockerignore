@@ -1,8 +1,14 @@
+tests
 scripts
+coverage
 node_modules
 npm-debug.log
 .husky
+.eslintrc
 .git
+.github
 .gitignore
-.cz.json
+.husky
+.prettierrc.json
+.release-it.json
 Dockerfile
