@@ -1,5 +1,8 @@
+scripts
 node_modules
 npm-debug.log
+.husky
 .git
 .gitignore
+.cz.json
 Dockerfile

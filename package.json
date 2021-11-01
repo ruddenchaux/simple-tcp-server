@@ -4,8 +4,11 @@
   "description": "Simple TCP server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "start": "node .",
+    "prepare-commit-msg-unix": "exec < /dev/tty && git cz --hook || true",
+    "prepare-commit-msg-win": "scripts/prepare-commit-msg",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/ruddenchaux/simple-tcp-server/issues"
   },
-  "homepage": "https://github.com/ruddenchaux/simple-tcp-server#readme"
+  "homepage": "https://github.com/ruddenchaux/simple-tcp-server#readme",
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.4"
+  }
 }
