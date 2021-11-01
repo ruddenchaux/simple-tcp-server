@@ -4,6 +4,8 @@
   "description": "Simple TCP server",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 0",
     "start": "node .",
     "prepare-commit-msg-unix": "exec < /dev/tty && git cz --hook || true",
@@ -21,8 +23,15 @@
   },
   "homepage": "https://github.com/ruddenchaux/simple-tcp-server#readme",
   "devDependencies": {
+    "@babel/eslint-parser": "^7.16.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^7.0.4"
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "husky": "^7.0.4",
+    "prettier": "^2.4.1"
   }
 }

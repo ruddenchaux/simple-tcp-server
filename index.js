@@ -1,1 +1,1 @@
-console.log("simple-tcp-server");
+console.log('simple-tcp-server');
