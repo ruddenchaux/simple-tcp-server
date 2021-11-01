@@ -1,0 +1,20 @@
+{
+  "name": "simple-tcp-server",
+  "version": "0.0.1",
+  "description": "Simple TCP server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruddenchaux/simple-tcp-server.git"
+  },
+  "author": "Federico Dainelli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ruddenchaux/simple-tcp-server/issues"
+  },
+  "homepage": "https://github.com/ruddenchaux/simple-tcp-server#readme"
+}
