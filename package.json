@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint:fix": "npm run lint -- --fix",
     "test": "NODE_ENV=test node -r dotenv/config --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:ci": "npm test -- --ci",
     "test:watch": "npm test -- --watchAll",
@@ -14,7 +14,8 @@
     "start": "NODE_ENV=dev node -r dotenv/config .",
     "prepare-commit-msg-unix": "exec < /dev/tty && git cz --hook || true",
     "prepare-commit-msg-win": "scripts/prepare-commit-msg",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "HUSKY=0 release-it --disable-metrics --ci"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   "homepage": "https://github.com/ruddenchaux/simple-tcp-server#readme",
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.0",
+    "@release-it/conventional-changelog": "^3.3.0",
     "@types/jest": "^27.0.2",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
@@ -39,7 +41,8 @@
     "eslint-plugin-promise": "^5.1.1",
     "husky": "^7.0.4",
     "jest": "^27.3.1",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "release-it": "^14.11.6"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
